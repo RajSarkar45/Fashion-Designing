@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina Atelier | Fashion Design Studio</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Lumina Atelier home">
+      <span class="brand-mark">LA</span>
+      <span>Lumina Atelier</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#collections">Collections</a>
+      <a href="#process">Process</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Contemporary couture studio</p>
+        <h1>Lumina Atelier</h1>
+        <p class="hero-copy">
+          Bespoke silhouettes, refined fabrics, and thoughtful styling for modern occasion wear.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#collections">View Collection</a>
+          <a class="button secondary" href="#contact">Book Styling</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div>
+        <p class="eyebrow">Designed around movement</p>
+        <h2>Elegant fashion made for real celebrations.</h2>
+      </div>
+      <p>
+        We create gowns, tailored separates, and editorial looks with hand-finished details,
+        strong fit, and a quiet sense of drama.
+      </p>
+    </section>
+
+    <section class="collections" id="collections">
+      <div class="section-heading">
+        <p class="eyebrow">Signature edits</p>
+        <h2>Collections</h2>
+      </div>
+
+      <div class="collection-grid">
+        <article class="collection-card">
+          <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80" alt="Model wearing a flowing designer dress" />
+          <div>
+            <h3>Evening Form</h3>
+            <p>Fluid gowns, satin drape, and sculptural necklines for formal evenings.</p>
+          </div>
+        </article>
+
+        <article class="collection-card">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80" alt="Fashion model in modern streetwear styling" />
+          <div>
+            <h3>Urban Muse</h3>
+            <p>Layered separates, sharp jackets, and elevated daily-wear styling.</p>
+          </div>
+        </article>
+
+        <article class="collection-card">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="Editorial fashion look with bold styling" />
+          <div>
+            <h3>Editorial Line</h3>
+            <p>Statement pieces for shoots, performances, and concept-led wardrobes.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="section-heading">
+        <p class="eyebrow">From sketch to fitting</p>
+        <h2>Our Process</h2>
+      </div>
+
+      <div class="steps">
+        <article>
+          <span>01</span>
+          <h3>Consult</h3>
+          <p>We define the occasion, mood, measurements, and fabric direction.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Design</h3>
+          <p>Sketches, swatches, and silhouette options shape the final concept.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Fit</h3>
+          <p>Careful fittings refine comfort, proportion, and finishing details.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Studio moodboard</p>
+        <h2>Gallery</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80" alt="Fashion model wearing a light dress outdoors" />
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Portrait of a model in elegant fashion styling" />
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80" alt="Model posing in a minimal fashion look" />
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Designer fashion pieces on display" />
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <p class="eyebrow">Appointments</p>
+        <h2>Start your custom look.</h2>
+        <p>Tell us about your event, preferred style, and timeline. We will reply with next steps.</p>
+      </div>
+
+      <form class="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Design Interest
+          <select name="interest">
+            <option>Custom gown</option>
+            <option>Styling session</option>
+            <option>Editorial outfit</option>
+            <option>Alteration consultation</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Share your idea"></textarea>
+        </label>
+        <button class="button primary" type="submit">Send Request</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Lumina Atelier. Fashion design studio.</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
